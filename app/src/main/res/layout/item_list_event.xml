@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginHorizontal="6dp"
+    android:layout_marginVertical="6dp"
+    app:cardElevation="1dp"
+    app:cardCornerRadius="12dp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/content_description_iv_calendar"
+            android:src="@drawable/event_time"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_event_time"
+            style="@style/TextContent.BodyMedium"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="@+id/imageView"
+            tools:text="2024-05-18 10:00:00" />
+
+        <TextView
+            android:id="@+id/tv_event_title"
+            style="@style/TextContent.TitleMedium.Bold"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            tools:text="DevCoach 151 : Front End | Hidup Lebih Simpel dengan Axios" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ci_event"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            app:civ_border_color="#6A6868"
+            app:civ_border_width="0.5dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_event_title"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/tv_event_owner"
+            style="@style/TextContent.TitleMedium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/ci_event"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ci_event"
+            app:layout_constraintTop_toTopOf="@+id/ci_event"
+            tools:text="Google Developer Student Club Unand" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_location"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/ci_event"
+            app:layout_constraintTop_toBottomOf="@+id/ci_event" />
+
+        <TextView
+            android:id="@+id/tv_location"
+            style="@style/TextContent.BodyMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="@+id/imageView2"
+            tools:text="Kota Samarinda" />
+
+        <TextView
+            android:id="@+id/tv_category"
+            style="@style/TextContent.BodyMedium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_location"
+            tools:text="Tech-talk" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

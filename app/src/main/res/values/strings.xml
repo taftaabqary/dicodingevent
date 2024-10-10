@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Dicoding Events</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_finished">Finished</string>
+    <string name="title_upcoming">Upcoming</string>
+    <string name="content_description_iv_calendar">Icon calendar event</string>
+    <string name="retry">Retry</string>
+    <string name="cd_detail_photo">Detail photo event</string>
+    <string name="empty_list">Saat ini belum ada jadwal event terdekat</string>
+</resources>
